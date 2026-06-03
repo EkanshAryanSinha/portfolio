@@ -28,10 +28,10 @@ export default function Home() {
           smoothWheel: true,
         });
 
-        function raf(time: number) {
+        const raf = (time: number) => {
           lenis!.raf(time);
           requestAnimationFrame(raf);
-        }
+        };
         requestAnimationFrame(raf);
       } catch {
         // Graceful fallback — native scroll still works
