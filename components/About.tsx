@@ -11,7 +11,7 @@ const stats = [
 ];
 
 const techBadges = [
-  "Python", "C++", "Java", "SQL", "FastAPI", "REST APIs",
+  "Python", "C++", "SQL", "FastAPI", "REST APIs",
   "Options & Derivatives", "Black-Scholes", "NumPy", "Pandas", "GSAP", "Docker",
 ];
 

@@ -11,7 +11,7 @@ const resumes = [
     viewFile: "/resumes/Ekansh_Aryan_Sinha_SDE_Resume.pdf",
     color: "#00d4ff",
     icon: "💻",
-    tags: ["FastAPI", "Python", "C++", "Java", "DSA", "Microservices"],
+    tags: ["FastAPI", "Python", "C++", "DSA", "Microservices"],
     highlight: "SDE Fresher | Backend Specialist",
   },
   {

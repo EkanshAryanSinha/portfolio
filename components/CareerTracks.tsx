@@ -5,7 +5,7 @@ import { motion, useInView } from "framer-motion";
 
 const sdeSkills = [
   { label: "FastAPI & REST APIs", icon: "⚡" },
-  { label: "Java / C++ / Python", icon: "💻" },
+  { label: "C++ / Python", icon: "💻" },
   { label: "Backend Microservices", icon: "🔧" },
   { label: "Data Structures & Algorithms", icon: "🧮" },
   { label: "Operating Systems", icon: "⚙️" },
