@@ -10,7 +10,6 @@ const skillGroups = [
     skills: [
       { name: "Python", desc: "Primary language for backend, automation, and quant workflows" },
       { name: "C++", desc: "Systems programming, OOP design, concurrency" },
-      { name: "Java", desc: "OOP-heavy projects, scheduling engines, threading" },
       { name: "JavaScript", desc: "Web interfaces and tooling" },
       { name: "SQL", desc: "Relational schema design, complex queries, stored procedures" },
     ],
