@@ -31,6 +31,7 @@ const achievements = [
     label: "LeetCode Problems",
     desc: "Solved across Data Structures, Dynamic Programming, Graphs, Trees, and Sliding Window — consistent practice over 2 years.",
     color: "#00d4ff",
+    href: "https://leetcode.com/u/Neov_/",
   },
   {
     icon: "🏆",
@@ -39,6 +40,7 @@ const achievements = [
     label: "Global Contest Rank",
     desc: "Ranked #654 globally out of 34,000+ participants in a LeetCode Weekly Contest — top 2% performance.",
     color: "#f59e0b",
+    href: "https://leetcode.com/u/Neov_/",
   },
   {
     icon: "🤖",
@@ -70,7 +72,7 @@ const AchievementCard = ({
   ach,
   index,
 }: {
-  ach: (typeof achievements)[0];
+  ach: (typeof achievements)[0] & { href?: string };
   index: number;
 }) => {
   const ref = useRef(null);
@@ -83,7 +85,8 @@ const AchievementCard = ({
       initial={{ opacity: 0, y: 30, rotateX: -10 }}
       animate={inView ? { opacity: 1, y: 0, rotateX: 0 } : {}}
       transition={{ duration: 0.6, delay: index * 0.1, ease: "easeOut" }}
-      className="glass-card rounded-2xl p-6 border border-white/5 hover:border-white/10 group transition-all duration-300 flex flex-col"
+      className={`glass-card rounded-2xl p-6 border border-white/5 hover:border-white/10 group transition-all duration-300 flex flex-col ${ach.href ? "cursor-pointer" : ""}`}
+      onClick={() => ach.href && window.open(ach.href, "_blank", "noopener noreferrer")}
       style={{ perspective: "600px" }}
     >
       {/* Icon */}

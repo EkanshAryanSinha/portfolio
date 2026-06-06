@@ -19,6 +19,13 @@ const CONTACT_LINKS = [
     color: "#0ea5e9",
   },
   {
+    label: "LeetCode",
+    value: "leetcode.com/u/Neov_",
+    href: "https://leetcode.com/u/Neov_/",
+    icon: "⚡",
+    color: "#f59e0b",
+  },
+  {
     label: "Location",
     value: "Bangalore, India",
     href: null,
